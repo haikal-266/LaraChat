@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    @foreach($users as $user)
+                        @if($user->id != auth()->user()->id)
+                            <a href="{{ route('chat', $user->id) }}">Chat {{ $user->name }}</a>
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </div>
