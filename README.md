@@ -8,7 +8,5 @@
 </p>
 
 <br>
-<br>
-<br>
 
 ## Mencoba Membuat Chat App Memakai Laravel
